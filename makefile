@@ -30,12 +30,15 @@ obj/strategy.o: src/strategy.cpp | obj
 bin/$(target): obj/headsup_nash.o obj/strategy.o | bin
 	$(CC) -std=c++20 -Iinclude/ -o $@ $^
 
+# tested for Windows. 
+make_dir = mkdir
+
 # https://stackoverflow.com/questions/12605051/
 obj:
-	$(make_dir) $@
+	if not exist $@ $(make_dir) $@
 
 bin:
-	$(make_dir) $@
+	if not exist $@ $(make_dir) $@
 
 .PHONY: clean
 clean:
