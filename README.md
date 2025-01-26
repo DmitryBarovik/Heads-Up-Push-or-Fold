@@ -57,6 +57,7 @@ Bill Chen's "The Mathematics of Poker" (2006) also published "Jam or Fold" table
 - g++ with c++20 standard
 - make or Mingw32-make (for Windows)
 - handranks.dat (the 123MB file of 30 million integers from the two-plus-two evaluator)
+  Can be downloaded from: https://github.com/christophschmalhofer/poker/blob/master/XPokerEval/XPokerEval.TwoPlusTwo/HandRanks.dat
 
 ## To Build and Run
 
